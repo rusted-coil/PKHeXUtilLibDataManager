@@ -1,0 +1,9 @@
+[submodule "PKHeXUtilLib"]
+	path = PKHeXUtilLib
+	url = https://github.com/rusted-coil/PKHeXUtilLib.git
+[submodule "PKHeXUtilForms"]
+	path = PKHeXUtilForms
+	url = https://github.com/rusted-coil/PKHeXUtilForms.git
+[submodule "FormRx"]
+	path = FormRx
+	url = https://github.com/rusted-coil/FormRx.git
