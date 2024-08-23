@@ -1,12 +1,17 @@
-﻿namespace PKHeXUtilLibDataManager.Main
+﻿using FormRx.Extensions;
+using System.Reactive.Disposables;
+
+namespace PKHeXUtilLibDataManager.Main
 {
     internal class MainFormPresenter : IDisposable
     {
+        readonly CompositeDisposable m_Disposables = new CompositeDisposable();
         readonly MainForm m_MainForm;
 
         public MainFormPresenter()
         {
             m_MainForm = new MainForm();
+            m_MainForm.OpenNameParserDataEditButton.Clicked.Subscribe(_ => OpenNameParserDataEditor()).AddTo(m_Disposables);
         }
 
         public void Run()
@@ -16,6 +21,12 @@
 
         public void Dispose() 
         {            
+            m_Disposables.Dispose();
+        }
+
+        void OpenNameParserDataEditor()
+        {
+            MessageBox.Show("Open");
         }
     }
 }
