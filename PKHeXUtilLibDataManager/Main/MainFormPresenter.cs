@@ -1,4 +1,5 @@
 ﻿using FormRx.Extensions;
+using PKHeXUtilForms.Pokemon.NameParser;
 using System.Reactive.Disposables;
 
 namespace PKHeXUtilLibDataManager.Main
@@ -26,7 +27,7 @@ namespace PKHeXUtilLibDataManager.Main
 
         void OpenNameParserDataEditor()
         {
-            MessageBox.Show("Open");
+            NameParserFormService.OpenNameParserDataEditor();
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PKHeXUtilLibDataManager": {
+      "commandName": "Project",
+      "workingDirectory": "..\\"
+    }
+  }
+}
